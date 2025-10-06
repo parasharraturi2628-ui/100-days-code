@@ -17,7 +17,7 @@ int main() {
     printf("Enter the element to search: ");
     scanf("%d", &key);
 
-    // Linear search
+    
     for (i = 0; i < n; i++) {
         if (arr[i] == key) {
             printf("Element %d found at position %d.\n", key, i + 1);
