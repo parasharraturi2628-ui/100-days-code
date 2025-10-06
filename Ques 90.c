@@ -1,24 +1,22 @@
 //Toggle case of each character in a string.
 
 #include <stdio.h>
-#include <ctype.h>
 
-int main()
-{
-    char str[100];
-    int i;
+int main() {
+    char str[1000];
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
-    for(i = 0; str[i] != '\0'; i++)
-    {
-        if(islower(str[i]))
-            str[i] = toupper(str[i]);
-        else if(isupper(str[i]))
-            str[i] = tolower(str[i]);
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + 32; 
+        } else if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 32; 
+        }
     }
 
-    printf("Toggled string: %s", str);
+    printf("Toggled case string: %s\n", str);
+
     return 0;
 }
