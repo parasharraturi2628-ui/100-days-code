@@ -4,14 +4,14 @@
 
 int main() {
     long long num;
-    int freq[10] = {0};  // To store frequency of digits 0–9
+    int freq[10] = {0};  
     int digit, maxDigit = 0, maxFreq = 0;
 
     printf("Enter an integer number: ");
     scanf("%lld", &num);
 
     if (num < 0) {
-        num = -num;  // Handle negative numbers
+        num = -num;  
     }
 
    
