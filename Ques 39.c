@@ -9,7 +9,7 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    // Make sure to work with positive number for simplicity
+    
     if (num < 0) {
         num = -num;
     }
